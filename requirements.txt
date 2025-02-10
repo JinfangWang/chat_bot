@@ -1,0 +1,6 @@
+streamlit
+openai
+pinecone-client
+sentence-transformers
+pandas
+torch
