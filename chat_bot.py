@@ -8,9 +8,9 @@ import pandas as pd
 from pinecone import Pinecone
 
 # Load environment variables
-openai.api_key = os.getenv("OPENAI_API_KEY")
-pinecone_api_key = os.getenv("PINECONE_API_KEY")
-pinecone_env = os.getenv("PINECONE_ENVIRONMENT")
+openai.api_key = st.secrets("OPENAI_API_KEY")
+pinecone_api_key = st.secrets("PINECONE_API_KEY")
+pinecone_env = st.secrets("PINECONE_ENVIRONMENT")
 
 # Initialize Pinecone
 if not pinecone_api_key:
